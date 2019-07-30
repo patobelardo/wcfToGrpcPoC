@@ -588,11 +588,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/contracts.csproj",
+      "projectUniqueName": "/Users/pbelardo/github/wcfToGrpcPoC/contracts/contracts.csproj",
       "projectName": "contracts",
-      "projectPath": "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/contracts.csproj",
+      "projectPath": "/Users/pbelardo/github/wcfToGrpcPoC/contracts/contracts.csproj",
       "packagesPath": "/Users/pbelardo/.nuget/packages/",
-      "outputPath": "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/obj/",
+      "outputPath": "/Users/pbelardo/github/wcfToGrpcPoC/contracts/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pbelardo/.nuget/NuGet/NuGet.Config"

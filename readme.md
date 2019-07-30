@@ -127,6 +127,14 @@ As conclusion for this PoC, we can see there is a way to move to Grpc using a si
 
 To create load, we deployed this solution into a Kubernetes cluster, and created 20 client instances and 2 servers, to evaluate load balancing and how the solution performs in general. Deployment definition can be found at *deployment.yml* file.
 
+You can leverage [Dotnet Counters](https://github.com/dotnet/diagnostics/blob/master/documentation/dotnet-counters-instructions.md) to access to performance information. For this example we executed:
+
+````bash
+dotnet tool install --global dotnet-counters --version 3.0.0-preview7.19365.2
+
+./dotnet-counters monitor Microsoft.AspNetCore.Hosting System.Runtime -p 1
+````
+
 ![](imgs/2019-07-29-10-50-54.png)
 
 **Logging**
@@ -144,7 +152,7 @@ At client
 ![](imgs/2019-07-29-12-36-44.png)
 
 
-## References
+## Other documents - References
 
 - [Security Considerations](https://docs.microsoft.com/en-us/aspnet/core/grpc/security?view=aspnetcore-3.0)
-
+- 
