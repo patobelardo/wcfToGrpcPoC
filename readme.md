@@ -146,5 +146,5 @@ At client
 
 ## References
 
-- ![Security Considerations](https://docs.microsoft.com/en-us/aspnet/core/grpc/security?view=aspnetcore-3.0)
+- [Security Considerations](https://docs.microsoft.com/en-us/aspnet/core/grpc/security?view=aspnetcore-3.0)
 
