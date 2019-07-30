@@ -124,18 +124,23 @@ The implementation of the interceptor looks like this:
 As conclusion for this PoC, we can see there is a way to move to Grpc using a similar approach to what we are doing today with WCF. Although this approach is working, we know there will be challenges over the course of the migration, as the case of primitive return types (can't be returned as-is on service definitions), so we recommend analyze the approach and evaluate other aspects appropiately. 
 
 **Load**
+
 To create load, we deployed this solution into a Kubernetes cluster, and created 20 client instances and 2 servers, to evaluate load balancing and how the solution performs in general. Deployment definition can be found at *deployment.yml* file.
 
 ![](imgs/2019-07-29-10-50-54.png)
 
 **Logging**
+
 ![](imgs/2019-07-29-12-33-03.png)
 
 **Exception Shielding**
+
 At server
+
 ![](imgs/2019-07-29-12-35-39.png)
 
 At client
+
 ![](imgs/2019-07-29-12-36-44.png)
 
 
