@@ -144,4 +144,7 @@ At client
 ![](imgs/2019-07-29-12-36-44.png)
 
 
+## References
+
+- ![Security Considerations](https://docs.microsoft.com/en-us/aspnet/core/grpc/security?view=aspnetcore-3.0)
 
