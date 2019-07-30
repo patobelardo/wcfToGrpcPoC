@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.8.0-rc.1"/>
+    <PackageReference Include="Grpc.Tools" Version="1.21.0"/>
+    <PackageReference Include="Grpc.Core" Version="1.21.0"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0-preview6.19304.6"/>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0"/>
+    <ProjectReference Include="../contracts/contracts.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Grpc.AspNetCore.Server">
+      <HintPath>..\server\references\Grpc.AspNetCore.Server.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="protobuf-net.Grpc">
+      <HintPath>..\server\references\protobuf-net.Grpc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="protobuf-net.Grpc.HttpClient">
+      <HintPath>..\server\references\protobuf-net.Grpc.HttpClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Certs\ca.crt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Certs\client.crt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Certs\client.key">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

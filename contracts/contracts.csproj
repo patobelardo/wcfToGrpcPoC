@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.ServiceModel.Primitives" Version="4.5.3"/>
+    <PackageReference Include="Google.Protobuf" Version="3.8.0-rc.1"/>
+    <PackageReference Include="Grpc.Tools" Version="1.21.0"/>
+    <PackageReference Include="Grpc.Core" Version="1.21.0"/>
+    <PackageReference Include="protobuf-net" Version="3.0.0-alpha.43"/>
+  </ItemGroup>
+</Project>

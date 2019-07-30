@@ -1,0 +1,67 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: grpc-client
+  namespace: elements
+  labels:
+    app.kubernetes.io/name: grpc-poc
+    app.kubernetes.io/instance: client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: grpc-poc
+      app.kubernetes.io/instance: client
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: grpc-poc
+        app.kubernetes.io/instance: client
+    spec:
+      containers:
+        - name: client
+          image: patobelardo/grpc-client:1.0
+          env:
+          - name: serverlocation
+            value: "grpc-server.elements.svc.cluster.local"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: grpc-server
+  namespace: elements
+  labels:
+    app.kubernetes.io/name: grpc-poc
+    app.kubernetes.io/instance: server
+spec:
+  type: NodePort
+  ports:
+    - port: 8000
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: grpc-poc
+    app.kubernetes.io/instance: server
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: grpc-server
+  namespace: elements
+  labels:
+    app.kubernetes.io/name: grpc-poc
+    app.kubernetes.io/instance: server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: grpc-poc
+      app.kubernetes.io/instance: server
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: grpc-poc
+        app.kubernetes.io/instance: server
+    spec:
+      containers:
+        - name: server
+          image: patobelardo/grpc-server:1.0
