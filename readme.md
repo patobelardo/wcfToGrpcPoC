@@ -17,7 +17,7 @@ Notes:
 ## Service Definition
 
 
-Here is a basic exmple (*ISampleService*)
+Here is a basic example (*ISampleService*)
 ````csharp
     [ServiceContract]
     public interface ISampleService
@@ -25,19 +25,25 @@ Here is a basic exmple (*ISampleService*)
         [OperationContract]
         Task<DoResponse> DoAsync(DoRequest request);
     }
-````
-
-**Sub-types**
-In case you are using sub-types, you need to set the *ProtoInclude* attribute as part of the service definition
-
-````csharp
     [DataContract]
     public class DoRequest
     {
         [DataMember(Order = 1)]
         public List<Shape> Shapes { get; set; }
     }
+    [DataContract]
+    public class DoResponse
+    {
+        [DataMember(Order = 1)]
+        public bool IsSuccess { get; set; }
+    }
+````
 
+**Sub-types**
+
+In case you are using sub-types, you need to set the *ProtoInclude* attribute as part of the service definition
+
+````csharp
     //Protoinclude is part of protobuf-net implementation and will allow to include derived classes
     [DataContract, ProtoInclude(4, typeof(Circle))]
     public abstract class Shape
