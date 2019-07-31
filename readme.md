@@ -132,7 +132,7 @@ You can leverage [Dotnet Counters](https://github.com/dotnet/diagnostics/blob/ma
 ````bash
 dotnet tool install --global dotnet-counters --version 3.0.0-preview7.19365.2
 
-./dotnet-counters monitor Microsoft.AspNetCore.Hosting System.Runtime -p 1
+/root/.dotnet/tools/dotnet-counters monitor Microsoft.AspNetCore.Hosting System.Runtime -p 1
 ````
 
 ![](imgs/2019-07-29-10-50-54.png)
