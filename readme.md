@@ -12,7 +12,7 @@ To acomplish with this requirement, we didn't use protocol buffer files (.proto)
 
 Notes:
 - We used [.net core 3.0 preview 7+](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- We referenced compiled assemblies for some packages and not nuget packages because weren't available when we did the PoC (we compiled those from source code)
+- We referenced compiled assemblies for some packages and not nuget packages because weren't available when we did the PoC (we compiled them from source code)
 
 ## Service Definition
 
