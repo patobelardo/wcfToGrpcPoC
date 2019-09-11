@@ -2,6 +2,8 @@
 
 The main purpose of this PoC is to do an excercise about how to move from WCF solutions to GRPC.
 
+*Updated to use .net core 3.0 preview9 + nuget packages*
+
 ## Grpc CodeFirst 
 
 The supported and recommended way to implement Grpc on .net core is documented [here](https://docs.microsoft.com/en-us/aspnet/core/grpc/aspnetcore?view=aspnetcore-3.0&tabs=visual-studio).This approach is using .proto files.
