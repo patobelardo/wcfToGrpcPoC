@@ -2,17 +2,7 @@
 /Users/pbelardo/dev/elements/wcfcorepoc/contracts/bin/Debug/netcoreapp3.0/contracts.dll
 /Users/pbelardo/dev/elements/wcfcorepoc/contracts/bin/Debug/netcoreapp3.0/contracts.pdb
 /Users/pbelardo/dev/elements/wcfcorepoc/contracts/obj/Debug/netcoreapp3.0/contracts.csprojAssemblyReference.cache
-/Users/pbelardo/dev/elements/wcfcorepoc/contracts/obj/Debug/netcoreapp3.0/contracts.csproj.CoreCompileInputs.cache
 /Users/pbelardo/dev/elements/wcfcorepoc/contracts/obj/Debug/netcoreapp3.0/contracts.AssemblyInfoInputs.cache
 /Users/pbelardo/dev/elements/wcfcorepoc/contracts/obj/Debug/netcoreapp3.0/contracts.AssemblyInfo.cs
 /Users/pbelardo/dev/elements/wcfcorepoc/contracts/obj/Debug/netcoreapp3.0/contracts.dll
 /Users/pbelardo/dev/elements/wcfcorepoc/contracts/obj/Debug/netcoreapp3.0/contracts.pdb
-/Users/pbelardo/github/wcfToGrpcPoC/contracts/bin/Debug/netcoreapp3.0/contracts.deps.json
-/Users/pbelardo/github/wcfToGrpcPoC/contracts/bin/Debug/netcoreapp3.0/contracts.dll
-/Users/pbelardo/github/wcfToGrpcPoC/contracts/bin/Debug/netcoreapp3.0/contracts.pdb
-/Users/pbelardo/github/wcfToGrpcPoC/contracts/obj/Debug/netcoreapp3.0/contracts.csprojAssemblyReference.cache
-/Users/pbelardo/github/wcfToGrpcPoC/contracts/obj/Debug/netcoreapp3.0/contracts.csproj.CoreCompileInputs.cache
-/Users/pbelardo/github/wcfToGrpcPoC/contracts/obj/Debug/netcoreapp3.0/contracts.AssemblyInfoInputs.cache
-/Users/pbelardo/github/wcfToGrpcPoC/contracts/obj/Debug/netcoreapp3.0/contracts.AssemblyInfo.cs
-/Users/pbelardo/github/wcfToGrpcPoC/contracts/obj/Debug/netcoreapp3.0/contracts.dll
-/Users/pbelardo/github/wcfToGrpcPoC/contracts/obj/Debug/netcoreapp3.0/contracts.pdb

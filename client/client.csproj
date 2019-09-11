@@ -4,19 +4,28 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Protobuf" Version="3.8.0-rc.1"/>
-    <PackageReference Include="Grpc.Tools" Version="1.21.0"/>
-    <PackageReference Include="Grpc.Core" Version="1.21.0"/>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0-preview6.19304.6"/>
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0"/>
-    <ProjectReference Include="../contracts/contracts.csproj"/>
+    <PackageReference Include="Google.Protobuf" Version="*" />
+    <PackageReference Include="Grpc.Net.Client" Version="*" />
+    <PackageReference Include="Grpc.Tools" Version="*" />
+    <PackageReference Include="Grpc.Core" Version="*" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0-preview6.19304.6" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="*" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="*" />
+    <PackageReference Include="protobuf-net.Grpc" Version="1.0.0-alpha.3" />
+
+    <!-- <PackageReference Include="protobuf-net.Grpc" Version="1.0.0-alpha.3" />
+    <PackageReference Include="protobuf-net.Grpc.HttpClient" Version="0.0.3-alpha.106" />
+    <PackageReference Include="Grpc.Net.Client" Version="0.2.23-pre1" /> -->
+
+    <ProjectReference Include="../contracts/contracts.csproj" />
   </ItemGroup>
-  <ItemGroup>
+  <!-- <ItemGroup>
     <Reference Include="Grpc.AspNetCore.Server">
       <HintPath>..\server\references\Grpc.AspNetCore.Server.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
+  </ItemGroup> -->
+  <!-- <ItemGroup>
     <Reference Include="protobuf-net.Grpc">
       <HintPath>..\server\references\protobuf-net.Grpc.dll</HintPath>
     </Reference>
@@ -25,7 +34,7 @@
     <Reference Include="protobuf-net.Grpc.HttpClient">
       <HintPath>..\server\references\protobuf-net.Grpc.HttpClient.dll</HintPath>
     </Reference>
-  </ItemGroup>
+  </ItemGroup> -->
   <ItemGroup>
     <None Update="Certs\ca.crt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

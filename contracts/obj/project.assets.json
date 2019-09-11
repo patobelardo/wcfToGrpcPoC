@@ -73,13 +73,7 @@
           "build/Grpc.Tools.targets": {}
         }
       },
-      "Microsoft.NETCore.App/3.0.0-preview7-27912-14": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview7.19362.9"
-        }
-      },
-      "Microsoft.NETCore.Platforms/3.0.0-preview7.19362.9": {
+      "Microsoft.NETCore.Platforms/2.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -307,30 +301,17 @@
         "tools/windows_x86/protoc.exe"
       ]
     },
-    "Microsoft.NETCore.App/3.0.0-preview7-27912-14": {
-      "sha512": "TNDdHAcfUqEaWXXJoCMUGZnsIP53jlShQV4Ccw8Nqbl8SWkkz1llq4ckfoRl7QrHoq328JhEyCSnPaaYHAB5Xg==",
+    "Microsoft.NETCore.Platforms/2.1.0": {
+      "sha512": "ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA==",
       "type": "package",
-      "path": "microsoft.netcore.app/3.0.0-preview7-27912-14",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "microsoft.netcore.app.3.0.0-preview7-27912-14.nupkg.sha512",
-        "microsoft.netcore.app.nuspec"
-      ]
-    },
-    "Microsoft.NETCore.Platforms/3.0.0-preview7.19362.9": {
-      "sha512": "gc5/X1m73JO8ETxOHC3IbgM7JRa7LPsSY+/lVs88YGwKn0QYuU568EmpC8yPk9UKaAOq+82PWG61vFcXdNfsvQ==",
-      "type": "package",
-      "path": "microsoft.netcore.platforms/3.0.0-preview7.19362.9",
+      "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.3.0.0-preview7.19362.9.nupkg.sha512",
+        "microsoft.netcore.platforms.2.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
@@ -577,23 +558,26 @@
       "Google.Protobuf >= 3.8.0-rc.1",
       "Grpc.Core >= 1.21.0",
       "Grpc.Tools >= 1.21.0",
-      "Microsoft.NETCore.App >= 3.0.0-preview7-27912-14",
       "System.ServiceModel.Primitives >= 4.5.3",
       "protobuf-net >= 3.0.0-alpha.43"
     ]
   },
   "packageFolders": {
-    "/Users/pbelardo/.nuget/packages/": {}
+    "/Users/pbelardo/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pbelardo/github/wcfToGrpcPoC/contracts/contracts.csproj",
+      "projectUniqueName": "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/contracts.csproj",
       "projectName": "contracts",
-      "projectPath": "/Users/pbelardo/github/wcfToGrpcPoC/contracts/contracts.csproj",
+      "projectPath": "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/contracts.csproj",
       "packagesPath": "/Users/pbelardo/.nuget/packages/",
-      "outputPath": "/Users/pbelardo/github/wcfToGrpcPoC/contracts/obj/",
+      "outputPath": "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "/Users/pbelardo/.nuget/NuGet/NuGet.Config"
       ],
@@ -629,13 +613,6 @@
             "target": "Package",
             "version": "[1.21.0, )"
           },
-          "Microsoft.NETCore.App": {
-            "include": "None",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[3.0.0-preview7-27912-14, )",
-            "autoReferenced": true
-          },
           "System.ServiceModel.Primitives": {
             "target": "Package",
             "version": "[4.5.3, )"
@@ -659,7 +636,8 @@
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
-        }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100-preview9-014004/RuntimeIdentifierGraph.json"
       }
     }
   }

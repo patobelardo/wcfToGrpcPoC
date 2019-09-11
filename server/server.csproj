@@ -1,18 +1,16 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
+<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview5-19227-01" />
-    <PackageReference Include="Grpc.Core" Version="1.21.0" />
-
+    <PackageReference Include="Grpc.AspNetCore" Version="*" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="*" />
+    <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.0.0-alpha.3" />
     <ProjectReference Include="../contracts/contracts.csproj" />
-    <!-- <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="0.0.3-alpha.27" /> -->
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="protobuf-net.Grpc.AspNetCore">
+    <!-- <Reference Include="protobuf-net.Grpc.AspNetCore">
       <HintPath>references\protobuf-net.Grpc.AspNetCore.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net.Grpc">
@@ -20,8 +18,8 @@
     </Reference>
     <Reference Include="protobuf-net.Grpc.Server">
       <HintPath>references\protobuf-net.Grpc.Server.dll</HintPath>
-    </Reference>
-    <Reference Include="Grpc.AspNetCore.Server">
+    </Reference> -->
+    <!-- <Reference Include="Grpc.AspNetCore.Server">
       <HintPath>references\Grpc.AspNetCore.Server.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.AspNetCore.Server.Reflection">
@@ -29,12 +27,11 @@
     </Reference>
     <Reference Include="Grpc.Reflection">
       <HintPath>references\Grpc.Reflection.dll</HintPath>
-    </Reference>
+    </Reference> -->
   </ItemGroup>
   <ItemGroup>
     <None Update="certificate.pfx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
 </Project>

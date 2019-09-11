@@ -21,4 +21,4 @@ FROM mcr.microsoft.com/dotnet/core-nightly/sdk:3.0
 WORKDIR /app
 COPY --from=build-env /app/out .
 #ENTRYPOINT ["dotnet", "--list-runtimes"]
-ENTRYPOINT ["dotnet", "--fx-version", "3.0.0-preview7.19365.7", "server.dll"]
+ENTRYPOINT ["dotnet", "--fx-version", "3.0.0-preview8.19377.1", "server.dll"]

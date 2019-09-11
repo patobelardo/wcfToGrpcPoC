@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pbelardo/github/wcfToGrpcPoC/contracts/contracts.csproj": {}
+    "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/contracts.csproj": {}
   },
   "projects": {
-    "/Users/pbelardo/github/wcfToGrpcPoC/contracts/contracts.csproj": {
+    "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pbelardo/github/wcfToGrpcPoC/contracts/contracts.csproj",
+        "projectUniqueName": "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/contracts.csproj",
         "projectName": "contracts",
-        "projectPath": "/Users/pbelardo/github/wcfToGrpcPoC/contracts/contracts.csproj",
+        "projectPath": "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/contracts.csproj",
         "packagesPath": "/Users/pbelardo/.nuget/packages/",
-        "outputPath": "/Users/pbelardo/github/wcfToGrpcPoC/contracts/obj/",
+        "outputPath": "/Users/pbelardo/dev/elements/wcfcorepoc/contracts/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "/Users/pbelardo/.nuget/NuGet/NuGet.Config"
         ],
@@ -48,13 +51,6 @@
               "target": "Package",
               "version": "[1.21.0, )"
             },
-            "Microsoft.NETCore.App": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview7-27912-14, )",
-              "autoReferenced": true
-            },
             "System.ServiceModel.Primitives": {
               "target": "Package",
               "version": "[4.5.3, )"
@@ -78,7 +74,8 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
-          }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100-preview9-014004/RuntimeIdentifierGraph.json"
         }
       }
     }

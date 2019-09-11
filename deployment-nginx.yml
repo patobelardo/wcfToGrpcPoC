@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-svc
+  namespace: default
+  labels:
+    app.kubernetes.io/name: nginx-svc
+    app.kubernetes.io/instance: server
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: nginx-svc
+    app.kubernetes.io/instance: server

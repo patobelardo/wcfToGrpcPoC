@@ -11,7 +11,6 @@
           "Google.Protobuf": "3.8.0-rc.1",
           "Grpc.Core": "1.21.0",
           "Grpc.Tools": "1.21.0",
-          "Microsoft.NETCore.App": "3.0.0-preview7-27912-14",
           "System.ServiceModel.Primitives": "4.5.3",
           "protobuf-net": "3.0.0-alpha.43"
         },
@@ -87,12 +86,7 @@
         }
       },
       "Grpc.Tools/1.21.0": {},
-      "Microsoft.NETCore.App/3.0.0-preview7-27912-14": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview7.19362.9"
-        }
-      },
-      "Microsoft.NETCore.Platforms/3.0.0-preview7.19362.9": {},
+      "Microsoft.NETCore.Platforms/2.1.0": {},
       "protobuf-net/3.0.0-alpha.43": {
         "dependencies": {
           "System.ServiceModel.Primitives": "4.5.3"
@@ -115,7 +109,7 @@
       "System.Memory/4.5.2": {},
       "System.Private.ServiceModel/4.5.3": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview7.19362.9",
+          "Microsoft.NETCore.Platforms": "2.1.0",
           "System.Reflection.DispatchProxy": "4.5.0",
           "System.Security.Principal.Windows": "4.5.0"
         },
@@ -137,7 +131,7 @@
       "System.Reflection.DispatchProxy/4.5.0": {},
       "System.Security.Principal.Windows/4.5.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview7.19362.9"
+          "Microsoft.NETCore.Platforms": "2.1.0"
         }
       },
       "System.ServiceModel.Primitives/4.5.3": {
@@ -191,19 +185,12 @@
       "path": "grpc.tools/1.21.0",
       "hashPath": "grpc.tools.1.21.0.nupkg.sha512"
     },
-    "Microsoft.NETCore.App/3.0.0-preview7-27912-14": {
+    "Microsoft.NETCore.Platforms/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TNDdHAcfUqEaWXXJoCMUGZnsIP53jlShQV4Ccw8Nqbl8SWkkz1llq4ckfoRl7QrHoq328JhEyCSnPaaYHAB5Xg==",
-      "path": "microsoft.netcore.app/3.0.0-preview7-27912-14",
-      "hashPath": "microsoft.netcore.app.3.0.0-preview7-27912-14.nupkg.sha512"
-    },
-    "Microsoft.NETCore.Platforms/3.0.0-preview7.19362.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-gc5/X1m73JO8ETxOHC3IbgM7JRa7LPsSY+/lVs88YGwKn0QYuU568EmpC8yPk9UKaAOq+82PWG61vFcXdNfsvQ==",
-      "path": "microsoft.netcore.platforms/3.0.0-preview7.19362.9",
-      "hashPath": "microsoft.netcore.platforms.3.0.0-preview7.19362.9.nupkg.sha512"
+      "sha512": "sha512-ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA==",
+      "path": "microsoft.netcore.platforms/2.1.0",
+      "hashPath": "microsoft.netcore.platforms.2.1.0.nupkg.sha512"
     },
     "protobuf-net/3.0.0-alpha.43": {
       "type": "package",

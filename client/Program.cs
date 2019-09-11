@@ -8,8 +8,6 @@ using System.Runtime.InteropServices;
 using Client.Library;
 using Microsoft.Extensions.DependencyInjection;
 using Shared_CS;
-using ProtoBuf.Grpc;
-using ProtoBuf.Grpc.Client;
 using System.Net.Http;
 using System.Diagnostics;
 
